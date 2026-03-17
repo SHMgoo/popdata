@@ -1,0 +1,8 @@
+@media print{
+ #country-select{
+ 	display:none;
+ }
+ a.print{display:none;}
+ a.share{display:none;}
+
+}

@@ -1,0 +1,187 @@
+/*
+Styles for U.S. and World population clocks
+*/
+div#population-counter-container p:nth-of-type(1) {
+	float: none;
+	clear: both;
+}
+
+ul.tabs {
+	margin: 0;
+	padding: 0;
+}
+
+ul.tabs li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 49.2%;
+}
+
+ul.tabs a {
+	font-size: 0.9em;
+	padding: 5px 0;
+	display: inline-block;
+	width: 100%;
+	
+	text-align: center;
+	text-decoration: none;
+	color: #656363;
+	font-weight: bold;
+	
+	border: 1px solid #eee;
+	border-bottom: none;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+	
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-left-radius: 5px;
+	
+	background: #faf9f7;
+}
+
+ul.tabs a.selected {
+	padding-top: 9px;
+
+	border: 1px solid #032c44;
+	border-bottom: none;
+
+	background: #09334b;
+	
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	
+	text-shadow: 0px 1px #000;
+}
+
+
+div#population-counter-container {
+	margin: 0;
+}
+
+/*
+div#population-counter-container .container {
+	margin: 0;
+        width: 330px; 
+}
+*/ 
+
+
+div#world-pop-historical {
+	margin: 0 auto;
+	padding: 5px;
+}
+
+div#world-pop-historical table {
+	margin-left: 4px;
+	width: 48%;
+/*	float: none;
+	clear: both; */
+	
+}
+
+div#us-pop-components-container table thead {
+	display: none;
+}
+
+div#world-pop-historical table td {
+	padding-top: 5px;
+}
+
+div#us-pop-wrapper, div#world-pop-wrapper {
+	float: none;
+	clear: both;
+	width: 100%;
+}
+
+div#us-pop-wrapper h3, div#world-pop-wrapper h3{
+	display: none;
+}
+
+div#population-counter-container p:nth-of-type(1) {
+}
+
+div#us-pop-components-container table td {
+	padding-right: 5px;
+}
+
+/* progress bar cell */
+div#us-pop-components-container table td:nth-of-type(2) {
+	width: 75px;
+}
+
+/* odometer */
+div#us-pop-container p, div#world-pop-container p {
+	margin: 50px auto;
+	padding: 100px;
+	clear: both;
+	float: none;
+}
+
+div#us-pop-container p span, div#world-pop-container p span {
+	margin-right: 4px;
+	display: inline-block;
+	overflow: hidden;
+	height: 22px;
+/*	float: left; */
+	position: relative;
+	top: 1px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 0.75em;
+	text-shadow: 0px 0px 2px #000000;
+	filter: dropshadow(color=#000000, offx=0, offy=0);
+	
+}
+
+div#us-pop-container p span.rolling-digit, div#world-pop-container p span.rolling-digit {
+	top: 0px;
+	border: 1px solid #102e40;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow:  0px 4px 4px 0px rgba(184, 209, 221, 0.1);
+			box-shadow:  0px 4px 4px 0px rgba(184, 209, 221, 0.1);
+	background-image: url('./images/strip-bg.png');
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+div#us-pop-container p span.rolling-digit img, div#world-pop-container p span.rolling-digit img {
+	position: relative;
+}
+
+div#us-pop-components-container table td#component-timestamp {
+	display: none;
+}
+
+div#world-pop-wrapper div#world-pop-historical table {
+	margin-bottom: 10px;
+	border-spacing:0;
+	border-collapse:collapse;
+	float: none;
+	clear: both;
+	width: 97%;
+	
+}
+
+div#world-pop-historical table td {
+	padding: 2px 0;
+	font-size: 0.9em;
+}
+
+/* progress bars */
+#us-pop-components-container div.html-progress-bar-track {
+	background-image: url('./images/tan-bg.png');
+	background-size: auto 100%;
+	background-repeat: repeat-x;
+	width: 75px;	
+	height: 10px;
+}
+
+#us-pop-components-container span.html-progress-bar-bar {
+	display: block;
+	height: 10px;
+}

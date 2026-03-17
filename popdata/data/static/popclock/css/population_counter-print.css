@@ -1,0 +1,77 @@
+/*
+Styles for U.S. and World population clocks
+*/
+
+.component-header {
+	margin: 0;
+	padding: 0;
+}
+
+ul.tabs, ul.share {
+	display: none;
+}
+
+div#population-counter-container {
+	margin: 0;
+	padding: 0;
+}	
+
+div#population-counter-container h3 {
+	margin: 0;
+	padding: 0;
+}
+
+	div#population-counter-container p:first-child {}
+	div#population-counter-container nav.share {
+		display: none;
+	}
+	
+	svg {
+/*		display: none; */
+	}
+	
+	.progress-bar-container {
+		display: none;
+	}
+	
+	div#us-pop-container, div#world-pop-container {}
+	div#us-pop-wrapper {}
+	div#us-pop-container {}
+	
+	div#world-pop-container {
+		margin-top: 20pt;
+	}
+
+	div.lcol {}
+	
+	div#us-pop-container h3, div#world-pop-container h3 {}
+
+	div#us-pop-container div {}
+	
+	div#world-pop-container p {}
+	
+	div#population-counter-container div#us-pop-container p, div#population-counter-container div#world-pop-container p {}	
+	div#us-pop-wrapper {}
+	
+		div#us-pop-components-container {}
+		
+		div#population-counter-container div#us-pop-components-container p {}
+		div#us-pop-components-container table {}
+		div#us-pop-components-container table td {}
+		div#world-pop-historical table thead {
+			display: none;
+		}
+		div#us-pop-components-container table thead {
+			display: none;
+		}
+		div#us-pop-components-container table td + td {
+			display: none;
+		}
+		
+		div#world-pop-historical {}
+
+			div#world-pop-historical table {}
+
+#us-pop-components-container table th + th {
+	display: none;
+}

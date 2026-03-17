@@ -1,0 +1,46 @@
+{
+  "northeast": {
+    "label": "Northeast",
+    "values": [
+      { "year": 2020, "month": 7, "day": 1, "population": 57436027, "percentage": 17.3220 },
+      { "year": 2021, "month": 7, "day": 1, "population": 57234503, "percentage": 17.2341 },
+      { "year": 2022, "month": 7, "day": 1, "population": 57174375, "percentage": 17.1183 },
+      { "year": 2023, "month": 7, "day": 1, "population": 57458539, "percentage": 17.0624 },
+      { "year": 2024, "month": 7, "day": 1, "population": 57940522, "percentage": 17.0411 },
+      { "year": 2025, "month": 7, "day": 1, "population": 58042054, "percentage": 16.9820 }
+    ]
+  },
+  "midwest": {
+    "label": "Midwest",
+    "values": [
+      { "year": 2020, "month": 7, "day": 1, "population": 68979566, "percentage": 20.8034 },
+      { "year": 2021, "month": 7, "day": 1, "population": 68867096, "percentage": 20.7368 },
+      { "year": 2022, "month": 7, "day": 1, "population": 68872112, "percentage": 20.6206 },
+      { "year": 2023, "month": 7, "day": 1, "population": 69132050, "percentage": 20.5289 },
+      { "year": 2024, "month": 7, "day": 1, "population": 69518281, "percentage": 20.4463 },
+      { "year": 2025, "month": 7, "day": 1, "population": 69762666, "percentage": 20.4113 }
+    ]
+  },
+  "south": {
+    "label": "South",
+    "values": [
+      { "year": 2020, "month": 7, "day": 1, "population": 126473371, "percentage": 38.1429 },
+      { "year": 2021, "month": 7, "day": 1, "population": 127380165, "percentage": 38.3559 },
+      { "year": 2022, "month": 7, "day": 1, "population": 129066102, "percentage": 38.6430 },
+      { "year": 2023, "month": 7, "day": 1, "population": 130894372, "percentage": 38.8693 },
+      { "year": 2024, "month": 7, "day": 1, "population": 132662072, "percentage": 39.0178 },
+      { "year": 2025, "month": 7, "day": 1, "population": 133833983, "percentage": 39.1574 }
+    ]
+  },
+  "west": {
+    "label": "West",
+    "values": [
+      { "year": 2020, "month": 7, "day": 1, "population": 78689140, "percentage": 23.7317 },
+      { "year": 2021, "month": 7, "day": 1, "population": 78618402, "percentage": 23.6731 },
+      { "year": 2022, "month": 7, "day": 1, "population": 78883715, "percentage": 23.6181 },
+      { "year": 2023, "month": 7, "day": 1, "population": 79270091, "percentage": 23.5394 },
+      { "year": 2024, "month": 7, "day": 1, "population": 79882922, "percentage": 23.4947 },
+      { "year": 2025, "month": 7, "day": 1, "population": 80146154, "percentage": 23.4493 }
+    ]
+  }
+}

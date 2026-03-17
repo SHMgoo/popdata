@@ -1,0 +1,7 @@
+{
+  "source": "seed",
+  "sourceNote": "Starter values only (static). Replace later with IDB-based calculation/caching.",
+  "baseEpochMs": 1704067200000,
+  "basePopulation": 8100000000,
+  "perSecond": 2.5
+}

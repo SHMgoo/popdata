@@ -1,0 +1,38 @@
+{
+  "states": [
+    {"rank": 1, "geoid": "1506", "name": "California", "state": "CA", "population": 39355309, "density": 252.5},
+    {"rank": 2, "geoid": "1548", "name": "Texas", "state": "TX", "population": 31709821, "density": 121.4},
+    {"rank": 3, "geoid": "1512", "name": "Florida", "state": "FL", "population": 23462518, "density": 437.3},
+    {"rank": 4, "geoid": "1536", "name": "New York", "state": "NY", "population": 20002427, "density": 424.5},
+    {"rank": 5, "geoid": "1542", "name": "Pennsylvania", "state": "PA", "population": 13059432, "density": 291.9},
+    {"rank": 6, "geoid": "1517", "name": "Illinois", "state": "IL", "population": 12719141, "density": 229.1},
+    {"rank": 7, "geoid": "1539", "name": "Ohio", "state": "OH", "population": 11900510, "density": 291.3},
+    {"rank": 8, "geoid": "1513", "name": "Georgia", "state": "GA", "population": 11302748, "density": 195.8},
+    {"rank": 9, "geoid": "1537", "name": "North Carolina", "state": "NC", "population": 11197968, "density": 230.3},
+    {"rank": 10, "geoid": "1526", "name": "Michigan", "state": "MI", "population": 10127844, "density": 178.9}
+  ],
+  "counties": [
+    {"rank": 1, "geoid": "06037", "name": "Los Angeles County", "state": "CA", "population": 9757179, "density": 2403.1},
+    {"rank": 2, "geoid": "17031", "name": "Cook County", "state": "IL", "population": 5182617, "density": 5484.7},
+    {"rank": 3, "geoid": "48201", "name": "Harris County", "state": "TX", "population": 5009302, "density": 2934.1},
+    {"rank": 4, "geoid": "04013", "name": "Maricopa County", "state": "AZ", "population": 4673096, "density": 507.8},
+    {"rank": 5, "geoid": "06073", "name": "San Diego County", "state": "CA", "population": 3298799, "density": 783.5},
+    {"rank": 6, "geoid": "06059", "name": "Orange County", "state": "CA", "population": 3170435, "density": 3998.7},
+    {"rank": 7, "geoid": "12086", "name": "Miami-Dade County", "state": "FL", "population": 2838461, "density": 1494.0},
+    {"rank": 8, "geoid": "48113", "name": "Dallas County", "state": "TX", "population": 2656028, "density": 3041.9},
+    {"rank": 9, "geoid": "36047", "name": "Kings County", "state": "NY", "population": 2617631, "density": 37730.8},
+    {"rank": 10, "geoid": "06065", "name": "Riverside County", "state": "CA", "population": 2529933, "density": 350.9}
+  ],
+  "cities": [
+    {"rank": 1, "geoid": "3651000", "name": "New York city", "state": "NY", "population": 8478072, "density": 28217.3},
+    {"rank": 2, "geoid": "0644000", "name": "Los Angeles city", "state": "CA", "population": 3878704, "density": 8243.4},
+    {"rank": 3, "geoid": "1714000", "name": "Chicago city", "state": "IL", "population": 2721308, "density": 11948.8},
+    {"rank": 4, "geoid": "4835000", "name": "Houston city", "state": "TX", "population": 2390125, "density": 3730.2},
+    {"rank": 5, "geoid": "0455000", "name": "Phoenix city", "state": "AZ", "population": 1673164, "density": 3228.0},
+    {"rank": 6, "geoid": "4260000", "name": "Philadelphia city", "state": "PA", "population": 1573916, "density": 11717.2},
+    {"rank": 7, "geoid": "4865000", "name": "San Antonio city", "state": "TX", "population": 1526656, "density": 3059.7},
+    {"rank": 8, "geoid": "0666000", "name": "San Diego city", "state": "CA", "population": 1404452, "density": 4306.9},
+    {"rank": 9, "geoid": "4819000", "name": "Dallas city", "state": "TX", "population": 1326087, "density": 3903.9},
+    {"rank": 10, "geoid": "1235000", "name": "Jacksonville city", "state": "FL", "population": 1009833, "density": 1351.4}
+  ]
+}

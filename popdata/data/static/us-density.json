@@ -1,0 +1,38 @@
+{
+  "states": [
+    {"rank": 1, "geoid": "1511", "name": "District of Columbia", "state": "DC", "population": 693645, "density": 11347.5},
+    {"rank": 2, "geoid": "1534", "name": "New Jersey", "state": "NJ", "population": 9548215, "density": 1298.2},
+    {"rank": 3, "geoid": "1544", "name": "Rhode Island", "state": "RI", "population": 1114521, "density": 1078.0},
+    {"rank": 4, "geoid": "1525", "name": "Massachusetts", "state": "MA", "population": 7154084, "density": 917.1},
+    {"rank": 5, "geoid": "1509", "name": "Connecticut", "state": "CT", "population": 3688496, "density": 761.7},
+    {"rank": 6, "geoid": "1524", "name": "Maryland", "state": "MD", "population": 6265347, "density": 645.2},
+    {"rank": 7, "geoid": "1510", "name": "Delaware", "state": "DE", "population": 1059952, "density": 544.0},
+    {"rank": 8, "geoid": "1512", "name": "Florida", "state": "FL", "population": 23462518, "density": 437.3},
+    {"rank": 9, "geoid": "1536", "name": "New York", "state": "NY", "population": 20002427, "density": 424.5},
+    {"rank": 10, "geoid": "1542", "name": "Pennsylvania", "state": "PA", "population": 13059432, "density": 291.9}
+  ],
+  "counties": [
+    {"rank": 1, "geoid": "36061", "name": "New York County", "state": "NY", "population": 1660664, "density": 73292.7},
+    {"rank": 2, "geoid": "36047", "name": "Kings County", "state": "NY", "population": 2617631, "density": 37730.8},
+    {"rank": 3, "geoid": "36005", "name": "Bronx County", "state": "NY", "population": 1384724, "density": 32831.9},
+    {"rank": 4, "geoid": "36081", "name": "Queens County", "state": "NY", "population": 2316841, "density": 21309.4},
+    {"rank": 5, "geoid": "06075", "name": "San Francisco County", "state": "CA", "population": 827526, "density": 17725.7},
+    {"rank": 6, "geoid": "34017", "name": "Hudson County", "state": "NJ", "population": 736185, "density": 15937.3},
+    {"rank": 7, "geoid": "25025", "name": "Suffolk County", "state": "MA", "population": 793144, "density": 13614.5},
+    {"rank": 8, "geoid": "42101", "name": "Philadelphia County", "state": "PA", "population": 1573916, "density": 11717.2},
+    {"rank": 9, "geoid": "11001", "name": "District of Columbia", "state": "DC", "population": 702250, "density": 11488.5},
+    {"rank": 10, "geoid": "51510", "name": "Alexandria city", "state": "VA", "population": 159102, "density": 10652.7}
+  ],
+  "cities": [
+    {"rank": 1, "geoid": "3428650", "name": "Guttenberg town", "state": "NJ", "population": 11945, "density": 61891.2},
+    {"rank": 2, "geoid": "3479610", "name": "West New York town", "state": "NJ", "population": 52975, "density": 53348.4},
+    {"rank": 3, "geoid": "3474630", "name": "Union City city", "state": "NJ", "population": 66918, "density": 51995.3},
+    {"rank": 4, "geoid": "3432250", "name": "Hoboken city", "state": "NJ", "population": 59149, "density": 47319.2},
+    {"rank": 5, "geoid": "3638934", "name": "Kaser village", "state": "NY", "population": 5970, "density": 34709.3},
+    {"rank": 6, "geoid": "3639853", "name": "Kiryas Joel village", "state": "NY", "population": 43863, "density": 30002.1},
+    {"rank": 7, "geoid": "3651000", "name": "New York city", "state": "NY", "population": 8478072, "density": 28217.3},
+    {"rank": 8, "geoid": "3413570", "name": "Cliffside Park borough", "state": "NJ", "population": 26183, "density": 27388.1},
+    {"rank": 9, "geoid": "3650705", "name": "New Square village", "state": "NY", "population": 9973, "density": 27174.4},
+    {"rank": 10, "geoid": "3630213", "name": "Great Neck Plaza village", "state": "NY", "population": 7824, "density": 25157.6}
+  ]
+}

@@ -1,0 +1,910 @@
+{
+  "AN": {
+    "pop": "85157",
+    "st_name": "Andorra"
+  },
+  "AE": {
+    "pop": "10159428",
+    "st_name": "United Arab Emirates"
+  },
+  "AF": {
+    "pop": "50897843",
+    "st_name": "Afghanistan"
+  },
+  "AC": {
+    "pop": "104893",
+    "st_name": "Antigua and Barbuda"
+  },
+  "AV": {
+    "pop": "20089",
+    "st_name": "Anguilla"
+  },
+  "AL": {
+    "pop": "2524935",
+    "st_name": "Albania"
+  },
+  "AM": {
+    "pop": "2950306",
+    "st_name": "Armenia"
+  },
+  "AO": {
+    "pop": "40295263",
+    "st_name": "Angola"
+  },
+  "AR": {
+    "pop": "45536342",
+    "st_name": "Argentina"
+  },
+  "AQ": {
+    "pop": "42696",
+    "st_name": "American Samoa"
+  },
+  "AU": {
+    "pop": "9199871",
+    "st_name": "Austria"
+  },
+  "AS": {
+    "pop": "27882402",
+    "st_name": "Australia"
+  },
+  "AA": {
+    "pop": "127717",
+    "st_name": "Aruba"
+  },
+  "AJ": {
+    "pop": "10736712",
+    "st_name": "Azerbaijan"
+  },
+  "BK": {
+    "pop": "3628939",
+    "st_name": "Bosnia and Herzegovina"
+  },
+  "BB": {
+    "pop": "273259",
+    "st_name": "Barbados"
+  },
+  "BG": {
+    "pop": "175927589",
+    "st_name": "Bangladesh"
+  },
+  "BE": {
+    "pop": "12011512",
+    "st_name": "Belgium"
+  },
+  "UV": {
+    "pop": "24053779",
+    "st_name": "Burkina Faso"
+  },
+  "BU": {
+    "pop": "6693714",
+    "st_name": "Bulgaria"
+  },
+  "BA": {
+    "pop": "1591850",
+    "st_name": "Bahrain"
+  },
+  "BY": {
+    "pop": "13924339",
+    "st_name": "Burundi"
+  },
+  "BN": {
+    "pop": "15687265",
+    "st_name": "Benin"
+  },
+  "TB": {
+    "pop": "7073",
+    "st_name": "Saint Barthelemy"
+  },
+  "BD": {
+    "pop": "73198",
+    "st_name": "Bermuda"
+  },
+  "BX": {
+    "pop": "505588",
+    "st_name": "Brunei"
+  },
+  "BL": {
+    "pop": "12559502",
+    "st_name": "Bolivia"
+  },
+  "BR": {
+    "pop": "222624000",
+    "st_name": "Brazil"
+  },
+  "BF": {
+    "pop": "419791",
+    "st_name": "Bahamas, The"
+  },
+  "BT": {
+    "pop": "901139",
+    "st_name": "Bhutan"
+  },
+  "BC": {
+    "pop": "2555149",
+    "st_name": "Botswana"
+  },
+  "BO": {
+    "pop": "9419333",
+    "st_name": "Belarus"
+  },
+  "BH": {
+    "pop": "428168",
+    "st_name": "Belize"
+  },
+  "CA": {
+    "pop": "39465520",
+    "st_name": "Canada"
+  },
+  "CG": {
+    "pop": "122770579",
+    "st_name": "Democratic Republic of the Congo"
+  },
+  "CT": {
+    "pop": "5850877",
+    "st_name": "Central African Republic"
+  },
+  "CF": {
+    "pop": "6392743",
+    "st_name": "Congo"
+  },
+  "SZ": {
+    "pop": "8989321",
+    "st_name": "Switzerland"
+  },
+  "IV": {
+    "pop": "32603820",
+    "st_name": "CÃ´te dâ€™Ivoire"
+  },
+  "CW": {
+    "pop": "7433",
+    "st_name": "Cook Islands"
+  },
+  "CI": {
+    "pop": "19175010",
+    "st_name": "Chile"
+  },
+  "CM": {
+    "pop": "32267319",
+    "st_name": "Cameroon"
+  },
+  "CH": {
+    "pop": "1405918803",
+    "st_name": "China"
+  },
+  "CO": {
+    "pop": "50100671",
+    "st_name": "Colombia"
+  },
+  "CS": {
+    "pop": "5344639",
+    "st_name": "Costa Rica"
+  },
+  "CU": {
+    "pop": "9998034",
+    "st_name": "Cuba"
+  },
+  "CV": {
+    "pop": "624895",
+    "st_name": "Cabo Verde"
+  },
+  "UC": {
+    "pop": "154059",
+    "st_name": "CuraÃ§ao"
+  },
+  "CY": {
+    "pop": "1343402",
+    "st_name": "Cyprus"
+  },
+  "EZ": {
+    "pop": "10835323",
+    "st_name": "Czechia"
+  },
+  "GM": {
+    "pop": "83899469",
+    "st_name": "Germany"
+  },
+  "DJ": {
+    "pop": "1032307",
+    "st_name": "Djibouti"
+  },
+  "DA": {
+    "pop": "6087508",
+    "st_name": "Denmark"
+  },
+  "DO": {
+    "pop": "74599",
+    "st_name": "Dominica"
+  },
+  "DR": {
+    "pop": "10983409",
+    "st_name": "Dominican Republic"
+  },
+  "AG": {
+    "pop": "48429511",
+    "st_name": "Algeria"
+  },
+  "EC": {
+    "pop": "18648271",
+    "st_name": "Ecuador"
+  },
+  "EN": {
+    "pop": "1334106",
+    "st_name": "Estonia"
+  },
+  "EG": {
+    "pop": "114438165",
+    "st_name": "Egypt"
+  },
+  "ER": {
+    "pop": "6492416",
+    "st_name": "Eritrea"
+  },
+  "SP": {
+    "pop": "47390594",
+    "st_name": "Spain"
+  },
+  "ET": {
+    "pop": "124224192",
+    "st_name": "Ethiopia"
+  },
+  "FI": {
+    "pop": "5550793",
+    "st_name": "Finland"
+  },
+  "FJ": {
+    "pop": "958808",
+    "st_name": "Fiji"
+  },
+  "FM": {
+    "pop": "98093",
+    "st_name": "Micronesia, Federated States of"
+  },
+  "FO": {
+    "pop": "53589",
+    "st_name": "Faroe Islands"
+  },
+  "FR": {
+    "pop": "68653168",
+    "st_name": "France"
+  },
+  "GB": {
+    "pop": "2573219",
+    "st_name": "Gabon"
+  },
+  "UK": {
+    "pop": "69027283",
+    "st_name": "United Kingdom"
+  },
+  "GJ": {
+    "pop": "115177",
+    "st_name": "Grenada"
+  },
+  "GG": {
+    "pop": "4856613",
+    "st_name": "Georgia"
+  },
+  "GK": {
+    "pop": "68051",
+    "st_name": "Guernsey"
+  },
+  "GH": {
+    "pop": "36087358",
+    "st_name": "Ghana"
+  },
+  "GI": {
+    "pop": "29777",
+    "st_name": "Gibraltar"
+  },
+  "GL": {
+    "pop": "57661",
+    "st_name": "Greenland"
+  },
+  "GA": {
+    "pop": "2631425",
+    "st_name": "Gambia, The"
+  },
+  "GV": {
+    "pop": "14772606",
+    "st_name": "Guinea"
+  },
+  "EK": {
+    "pop": "1910834",
+    "st_name": "Equatorial Guinea"
+  },
+  "GR": {
+    "pop": "10387931",
+    "st_name": "Greece"
+  },
+  "GT": {
+    "pop": "17315578",
+    "st_name": "Guatemala"
+  },
+  "GQ": {
+    "pop": "169805",
+    "st_name": "Guam"
+  },
+  "PU": {
+    "pop": "2243720",
+    "st_name": "Guinea-Bissau"
+  },
+  "GY": {
+    "pop": "799675",
+    "st_name": "Guyana"
+  },
+  "HK": {
+    "pop": "7311499",
+    "st_name": "Hong Kong"
+  },
+  "HO": {
+    "pop": "9775362",
+    "st_name": "Honduras"
+  },
+  "HR": {
+    "pop": "4049812",
+    "st_name": "Croatia"
+  },
+  "HA": {
+    "pop": "12043709",
+    "st_name": "Haiti"
+  },
+  "HU": {
+    "pop": "9798339",
+    "st_name": "Hungary"
+  },
+  "ID": {
+    "pop": "285562809",
+    "st_name": "Indonesia"
+  },
+  "EI": {
+    "pop": "5320864",
+    "st_name": "Ireland"
+  },
+  "IS": {
+    "pop": "9704419",
+    "st_name": "Israel"
+  },
+  "IM": {
+    "pop": "93035",
+    "st_name": "Isle of Man"
+  },
+  "IN": {
+    "pop": "1429700205",
+    "st_name": "India"
+  },
+  "IZ": {
+    "pop": "43751077",
+    "st_name": "Iraq"
+  },
+  "IR": {
+    "pop": "88815177",
+    "st_name": "Iran"
+  },
+  "IC": {
+    "pop": "370019",
+    "st_name": "Iceland"
+  },
+  "IT": {
+    "pop": "60896213",
+    "st_name": "Italy"
+  },
+  "JE": {
+    "pop": "104465",
+    "st_name": "Jersey"
+  },
+  "JM": {
+    "pop": "2946084",
+    "st_name": "Jamaica"
+  },
+  "JO": {
+    "pop": "11502926",
+    "st_name": "Jordan"
+  },
+  "JA": {
+    "pop": "122108827",
+    "st_name": "Japan"
+  },
+  "KE": {
+    "pop": "56953115",
+    "st_name": "Kenya"
+  },
+  "KG": {
+    "pop": "6265732",
+    "st_name": "Kyrgyzstan"
+  },
+  "CB": {
+    "pop": "17391404",
+    "st_name": "Cambodia"
+  },
+  "KR": {
+    "pop": "118850",
+    "st_name": "Kiribati"
+  },
+  "CN": {
+    "pop": "923195",
+    "st_name": "Comoros"
+  },
+  "SC": {
+    "pop": "55719",
+    "st_name": "Saint Kitts and Nevis"
+  },
+  "KN": {
+    "pop": "26504620",
+    "st_name": "Korea, North"
+  },
+  "KS": {
+    "pop": "51435032",
+    "st_name": "Korea, South"
+  },
+  "KU": {
+    "pop": "3206155",
+    "st_name": "Kuwait"
+  },
+  "CJ": {
+    "pop": "68971",
+    "st_name": "Cayman Islands"
+  },
+  "KZ": {
+    "pop": "20601073",
+    "st_name": "Kazakhstan"
+  },
+  "LA": {
+    "pop": "8150410",
+    "st_name": "Laos"
+  },
+  "LE": {
+    "pop": "5668814",
+    "st_name": "Lebanon"
+  },
+  "ST": {
+    "pop": "168865",
+    "st_name": "Saint Lucia"
+  },
+  "LS": {
+    "pop": "40819",
+    "st_name": "Liechtenstein"
+  },
+  "CE": {
+    "pop": "22098684",
+    "st_name": "Sri Lanka"
+  },
+  "LI": {
+    "pop": "5690295",
+    "st_name": "Liberia"
+  },
+  "LT": {
+    "pop": "2239644",
+    "st_name": "Lesotho"
+  },
+  "LH": {
+    "pop": "2781858",
+    "st_name": "Lithuania"
+  },
+  "LU": {
+    "pop": "701029",
+    "st_name": "Luxembourg"
+  },
+  "LG": {
+    "pop": "1864231",
+    "st_name": "Latvia"
+  },
+  "LY": {
+    "pop": "7562253",
+    "st_name": "Libya"
+  },
+  "MO": {
+    "pop": "38001962",
+    "st_name": "Morocco"
+  },
+  "MN": {
+    "pop": "32282",
+    "st_name": "Monaco"
+  },
+  "MD": {
+    "pop": "3558465",
+    "st_name": "Moldova"
+  },
+  "MJ": {
+    "pop": "594406",
+    "st_name": "Montenegro"
+  },
+  "RN": {
+    "pop": "33187",
+    "st_name": "Saint Martin"
+  },
+  "MA": {
+    "pop": "32016500",
+    "st_name": "Madagascar"
+  },
+  "RM": {
+    "pop": "84049",
+    "st_name": "Marshall Islands"
+  },
+  "MK": {
+    "pop": "2139186",
+    "st_name": "North Macedonia"
+  },
+  "ML": {
+    "pop": "23291010",
+    "st_name": "Mali"
+  },
+  "BM": {
+    "pop": "58326533",
+    "st_name": "Burma"
+  },
+  "MG": {
+    "pop": "3580695",
+    "st_name": "Mongolia"
+  },
+  "MC": {
+    "pop": "652693",
+    "st_name": "Macau"
+  },
+  "CQ": {
+    "pop": "50783",
+    "st_name": "Northern Mariana Islands"
+  },
+  "MR": {
+    "pop": "5353867",
+    "st_name": "Mauritania"
+  },
+  "MH": {
+    "pop": "5529",
+    "st_name": "Montserrat"
+  },
+  "MT": {
+    "pop": "525129",
+    "st_name": "Malta"
+  },
+  "MP": {
+    "pop": "1312042",
+    "st_name": "Mauritius"
+  },
+  "MV": {
+    "pop": "388256",
+    "st_name": "Maldives"
+  },
+  "MI": {
+    "pop": "20994314",
+    "st_name": "Malawi"
+  },
+  "MX": {
+    "pop": "132807523",
+    "st_name": "Mexico"
+  },
+  "MY": {
+    "pop": "35240479",
+    "st_name": "Malaysia"
+  },
+  "MZ": {
+    "pop": "35085048",
+    "st_name": "Mozambique"
+  },
+  "WA": {
+    "pop": "2902975",
+    "st_name": "Namibia"
+  },
+  "NC": {
+    "pop": "311020",
+    "st_name": "New Caledonia"
+  },
+  "NG": {
+    "pop": "28336282",
+    "st_name": "Niger"
+  },
+  "NI": {
+    "pop": "250228859",
+    "st_name": "Nigeria"
+  },
+  "NU": {
+    "pop": "6800490",
+    "st_name": "Nicaragua"
+  },
+  "NL": {
+    "pop": "17887585",
+    "st_name": "Netherlands"
+  },
+  "NO": {
+    "pop": "5573569",
+    "st_name": "Norway"
+  },
+  "NP": {
+    "pop": "31540295",
+    "st_name": "Nepal"
+  },
+  "NR": {
+    "pop": "9967",
+    "st_name": "Nauru"
+  },
+  "NZ": {
+    "pop": "5250088",
+    "st_name": "New Zealand"
+  },
+  "MU": {
+    "pop": "4036792",
+    "st_name": "Oman"
+  },
+  "PM": {
+    "pop": "4600852",
+    "st_name": "Panama"
+  },
+  "PE": {
+    "pop": "32959113",
+    "st_name": "Peru"
+  },
+  "FP": {
+    "pop": "307394",
+    "st_name": "French Polynesia"
+  },
+  "PP": {
+    "pop": "10502523",
+    "st_name": "Papua New Guinea"
+  },
+  "RP": {
+    "pop": "113757432",
+    "st_name": "Philippines"
+  },
+  "PK": {
+    "pop": "261714024",
+    "st_name": "Pakistan"
+  },
+  "PL": {
+    "pop": "38006623",
+    "st_name": "Poland"
+  },
+  "SB": {
+    "pop": "5008",
+    "st_name": "Saint Pierre and Miquelon"
+  },
+  "RQ": {
+    "pop": "2951840",
+    "st_name": "Puerto Rico"
+  },
+  "PO": {
+    "pop": "10183053",
+    "st_name": "Portugal"
+  },
+  "PS": {
+    "pop": "22030",
+    "st_name": "Palau"
+  },
+  "PA": {
+    "pop": "7684028",
+    "st_name": "Paraguay"
+  },
+  "QA": {
+    "pop": "2581405",
+    "st_name": "Qatar"
+  },
+  "RO": {
+    "pop": "17834785",
+    "st_name": "Romania"
+  },
+  "RI": {
+    "pop": "6573488",
+    "st_name": "Serbia"
+  },
+  "RS": {
+    "pop": "139450252",
+    "st_name": "Russia"
+  },
+  "RW": {
+    "pop": "14564163",
+    "st_name": "Rwanda"
+  },
+  "SA": {
+    "pop": "37800159",
+    "st_name": "Saudi Arabia"
+  },
+  "BP": {
+    "pop": "750708",
+    "st_name": "Solomon Islands"
+  },
+  "SE": {
+    "pop": "99226",
+    "st_name": "Seychelles"
+  },
+  "SU": {
+    "pop": "53124290",
+    "st_name": "Sudan"
+  },
+  "SW": {
+    "pop": "10697024",
+    "st_name": "Sweden"
+  },
+  "SN": {
+    "pop": "6131683",
+    "st_name": "Singapore"
+  },
+  "SH": {
+    "pop": "7955",
+    "st_name": "Saint Helena, Ascension, and Tristan da Cunha"
+  },
+  "SI": {
+    "pop": "2153498",
+    "st_name": "Slovenia"
+  },
+  "LO": {
+    "pop": "5554882",
+    "st_name": "Slovakia"
+  },
+  "SL": {
+    "pop": "9539924",
+    "st_name": "Sierra Leone"
+  },
+  "SM": {
+    "pop": "35481",
+    "st_name": "San Marino"
+  },
+  "SG": {
+    "pop": "19775563",
+    "st_name": "Senegal"
+  },
+  "SO": {
+    "pop": "21005408",
+    "st_name": "Somalia"
+  },
+  "NS": {
+    "pop": "660319",
+    "st_name": "Suriname"
+  },
+  "OD": {
+    "pop": "13786294",
+    "st_name": "South Sudan"
+  },
+  "TP": {
+    "pop": "229875",
+    "st_name": "Sao Tome and Principe"
+  },
+  "ES": {
+    "pop": "6355884",
+    "st_name": "El Salvador"
+  },
+  "NN": {
+    "pop": "47244",
+    "st_name": "Sint Maarten"
+  },
+  "SY": {
+    "pop": "24655702",
+    "st_name": "Syria"
+  },
+  "WZ": {
+    "pop": "1147197",
+    "st_name": "Eswatini"
+  },
+  "TK": {
+    "pop": "62562",
+    "st_name": "Turks and Caicos Islands"
+  },
+  "CD": {
+    "pop": "20266075",
+    "st_name": "Chad"
+  },
+  "TO": {
+    "pop": "9361016",
+    "st_name": "Togo"
+  },
+  "TH": {
+    "pop": "70109971",
+    "st_name": "Thailand"
+  },
+  "TI": {
+    "pop": "10793759",
+    "st_name": "Tajikistan"
+  },
+  "TT": {
+    "pop": "1422634",
+    "st_name": "Timor-Leste"
+  },
+  "TX": {
+    "pop": "5845952",
+    "st_name": "Turkmenistan"
+  },
+  "TS": {
+    "pop": "12005905",
+    "st_name": "Tunisia"
+  },
+  "TN": {
+    "pop": "104129",
+    "st_name": "Tonga"
+  },
+  "TU": {
+    "pop": "85113274",
+    "st_name": "Turkey"
+  },
+  "TD": {
+    "pop": "1411080",
+    "st_name": "Trinidad and Tobago"
+  },
+  "TV": {
+    "pop": "11912",
+    "st_name": "Tuvalu"
+  },
+  "TW": {
+    "pop": "23605244",
+    "st_name": "Taiwan"
+  },
+  "TZ": {
+    "pop": "71133853",
+    "st_name": "Tanzania"
+  },
+  "UP": {
+    "pop": "37273798",
+    "st_name": "Ukraine"
+  },
+  "UG": {
+    "pop": "52470987",
+    "st_name": "Uganda"
+  },
+  "US": {
+    "pop": "342620143",
+    "st_name": "United States"
+  },
+  "UY": {
+    "pop": "3447319",
+    "st_name": "Uruguay"
+  },
+  "UZ": {
+    "pop": "37474270",
+    "st_name": "Uzbekistan"
+  },
+  "VC": {
+    "pop": "100355",
+    "st_name": "Saint Vincent and the Grenadines"
+  },
+  "VE": {
+    "pop": "32030413",
+    "st_name": "Venezuela"
+  },
+  "VI": {
+    "pop": "41551",
+    "st_name": "Virgin Islands, British"
+  },
+  "VQ": {
+    "pop": "103166",
+    "st_name": "Virgin Islands, U.S."
+  },
+  "VM": {
+    "pop": "107587618",
+    "st_name": "Vietnam"
+  },
+  "NH": {
+    "pop": "327790",
+    "st_name": "Vanuatu"
+  },
+  "WF": {
+    "pop": "16027",
+    "st_name": "Wallis and Futuna"
+  },
+  "WS": {
+    "pop": "211619",
+    "st_name": "Samoa"
+  },
+  "GZ": {
+    "pop": "2227607",
+    "st_name": "Gaza Strip"
+  },
+  "KV": {
+    "pop": "2005355",
+    "st_name": "Kosovo"
+  },
+  "WE": {
+    "pop": "3377767",
+    "st_name": "West Bank"
+  },
+  "YM": {
+    "pop": "35272999",
+    "st_name": "Yemen"
+  },
+  "SF": {
+    "pop": "61727446",
+    "st_name": "South Africa"
+  },
+  "ZA": {
+    "pop": "22574088",
+    "st_name": "Zambia"
+  },
+  "ZI": {
+    "pop": "17790876",
+    "st_name": "Zimbabwe"
+  },
+"IO":{"pop":null,"st_name":"British Indian Ocean Territory"},"AX":{"pop":null,"st_name":"Akrotiri"},"AY":{"pop":null,"st_name":"Antarctica"},"KT":{"pop":null,"st_name":"Christmas Island"},"AT":{"pop":null,"st_name":"Ashmore and Cartier Islands"},"BQ":{"pop":null,"st_name":"Navassa Island"},"BV":{"pop":null,"st_name":"Bouvet Island"},"CK":{"pop":null,"st_name":"Cocos (Keeling) Islands"},"DX":{"pop":null,"st_name":"Dhekelia"},"DQ":{"pop":null,"st_name":"Jarvis Island"},"CR":{"pop":null,"st_name":"Coral Sea Islands"},"FK":{"pop":null,"st_name":"Falkland Islands (Islas Malvinas)"},"FQ":{"pop":null,"st_name":"Baker Island"},"HQ":{"pop":null,"st_name":"Howland Island"},"IP":{"pop":null,"st_name":"Clipperton Island"},"FS":{"pop":null,"st_name":"French Southern and Antarctic Lands"},"HM":{"pop":null,"st_name":"Heard Island and McDonald Islands"},"JN":{"pop":null,"st_name":"Jan Mayen"},"JQ":{"pop":null,"st_name":"Johnston Atoll"},"LQ":{"pop":null,"st_name":"Palmyra Atoll"},"KQ":{"pop":null,"st_name":"Kingman Reef"},"MQ":{"pop":null,"st_name":"Midway Islands"},"NE":{"pop":null,"st_name":"Niue"},"NF":{"pop":null,"st_name":"Norfolk Island"},"PF":{"pop":null,"st_name":"Paracel Islands"},"PC":{"pop":null,"st_name":"Pitcairn Islands"},"PG":{"pop":null,"st_name":"Spratly Islands"},"SV":{"pop":null,"st_name":"Svalbard"},"TL":{"pop":null,"st_name":"Tokelau"},"SX":{"pop":null,"st_name":"South Georgia and the South Sandwich Islands"},"WQ":{"pop":null,"st_name":"Wake Island"}}

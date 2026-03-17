@@ -1,0 +1,16 @@
+{
+  "source": "seed",
+  "sourceNote": "Starter values only (static). Replace later with API-derived rankings/caching.",
+  "countries": [
+    { "rank": 1, "name": "India", "iso2": "IN", "population": 1429700205 },
+    { "rank": 2, "name": "China", "iso2": "CN", "population": 1405918803 },
+    { "rank": 3, "name": "United States", "iso2": "US", "population": 342620143 },
+    { "rank": 4, "name": "Indonesia", "iso2": "ID", "population": 285562809 },
+    { "rank": 5, "name": "Pakistan", "iso2": "PK", "population": 261714024 },
+    { "rank": 6, "name": "Nigeria", "iso2": "NG", "population": 250228859 },
+    { "rank": 7, "name": "Brazil", "iso2": "BR", "population": 222624000 },
+    { "rank": 8, "name": "Bangladesh", "iso2": "BD", "population": 175927589 },
+    { "rank": 9, "name": "Russia", "iso2": "RU", "population": 139450252 },
+    { "rank": 10, "name": "Mexico", "iso2": "MX", "population": 132807523 }
+  ]
+}
