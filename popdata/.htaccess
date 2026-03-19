@@ -1,0 +1,16 @@
+RewriteEngine On
+SetEnv CENSUS_API_KEY d1577327606f0b84988a90e638a5a420ddcd9033
+
+# Block non-public project folders
+RewriteRule ^(src|config|services|vendor)(/|$) - [F,L]
+
+# If the request already points to /public, leave it alone
+RewriteRule ^public/ - [L]
+
+# If the request is for a real file or directory in the root, leave it alone
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Otherwise, send it to the public folder
+RewriteRule ^(.*)$ public/$1 [L]
