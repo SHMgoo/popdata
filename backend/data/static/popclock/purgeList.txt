@@ -1,6 +1,0 @@
-
-
-https://www.census.gov/popclock/country.php
-https://www.census.gov/popclock/country_print.php
-https://www.census.gov/popclock/js/d3.svg.census.js
-https://www.census.gov/popclock/js/d3.svg.census.min.js

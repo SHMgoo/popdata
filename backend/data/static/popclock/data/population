@@ -1,8 +1,0 @@
-<?php
-require_once ('/vs/www/php-bin/app-config/popclock/bootstrap.inc.php');
-require_once (dirname(__FILE__) . '/population.class.php');
-CBDB::connect($db);
-
-$pop = new population ();
-header("Access-Control-Allow-Origin: *");
-echo $pop;
