@@ -1,0 +1,69 @@
+:root {
+  /* Typography */
+  --pop-font-family-sans: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  --pop-font-family-base: var(--pop-font-family-sans);
+
+  --pop-font-size-xs: 0.75rem;
+  --pop-font-size-sm: 0.875rem;
+  --pop-font-size-md: 1rem;
+  --pop-font-size-lg: 1.125rem;
+  --pop-font-size-xl: 1.25rem;
+  --pop-font-size-2xl: 1.5rem;
+
+  --pop-font-weight-normal: 400;
+  --pop-font-weight-medium: 500;
+  --pop-font-weight-semibold: 600;
+  --pop-font-weight-bold: 700;
+
+  --pop-line-height-tight: 1.2;
+  --pop-line-height-base: 1.5;
+
+  /* Colors */
+  --pop-color-text: #112e51;
+  --pop-color-text-muted: #3d4551;
+  --pop-color-text-on-accent: #ffffff;
+
+  --pop-color-accent: #005ea2;
+  --pop-color-accent-strong: #1a4480;
+
+  --pop-color-surface: #ffffff;
+  --pop-color-surface-subtle: #f0f4f8;
+  --pop-color-border: #dfe1e2;
+  --pop-color-border-strong: #a9aeb1;
+
+  --pop-color-error: #b50909;
+  --pop-color-success: #2e8540;
+  --pop-color-warning: #ffbe2e;
+
+  /* Spacing */
+  --pop-space-1: 0.25rem;
+  --pop-space-2: 0.5rem;
+  --pop-space-3: 0.75rem;
+  --pop-space-4: 1rem;
+  --pop-space-5: 1.25rem;
+  --pop-space-6: 1.5rem;
+  --pop-space-8: 2rem;
+
+  /* Radius */
+  --pop-radius-sm: 0.25rem;
+  --pop-radius-md: 0.5rem;
+  --pop-radius-lg: 0.75rem;
+  --pop-radius-pill: 999px;
+
+  /* Shadows */
+  --pop-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --pop-shadow-md: 0 2px 6px rgba(0, 0, 0, 0.12);
+
+  /* Widget-specific defaults */
+  --pop-widget-bg: var(--pop-color-surface);
+  --pop-widget-border: var(--pop-color-border);
+  --pop-widget-title-color: var(--pop-color-text);
+  --pop-widget-subtitle-color: var(--pop-color-text-muted);
+
+  --pop-bar-bg: var(--pop-color-border);
+  --pop-bar-fill: var(--pop-color-accent);
+  --pop-bar-height: 0.5rem;
+
+  /* Layout */
+  --pop-widget-max-width: 100%;
+}

@@ -1,0 +1,24 @@
+# Secrets / local env
+.env
+
+# Local PHP dev server files
+.php-server.log
+.php-server.pid
+
+# Generated deployment/staging output
+distribution/
+github-publish/
+
+# Node dependencies
+node_modules/
+
+# Frontend build output
+dist/
+
+# Cache
+backend/data/cache/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/

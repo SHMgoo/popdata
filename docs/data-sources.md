@@ -1,0 +1,342 @@
+# popdata Data Sources
+
+This document describes where each `popdata` backend endpoint gets its data.
+
+The goal is to make it easy to understand:
+
+- what source each endpoint uses
+- whether the source is live, static, or cached
+- which files/classes are responsible for the data flow
+- what can be replaced later without changing the frontend contract
+
+---
+
+## Source Types
+
+The backend currently uses three source patterns:
+
+### 1. Live API
+Data is fetched in real time from an outside API.
+
+Examples:
+- U.S. Census API
+
+### 2. Static Data
+Data is stored in the repository as JSON or configuration values.
+
+Examples:
+- `backend/data/static/*.json`
+
+### 3. Cached Data
+Data is fetched from an external source, then saved locally for reuse.
+
+Examples:
+- `backend/data/cache/*.json`
+
+This is planned for later use as the project grows.
+
+---
+
+## Current Endpoint Source Map
+
+### GET /health.php
+
+**Source type:** internal / generated  
+**Current source:** no external source
+
+#### Notes
+This endpoint does not fetch data.  
+It returns a simple status payload from application config.
+
+#### Related files
+
+- `backend/public/health.php`
+- `backend/config/app.php`
+
+---
+
+### GET /manifest.php
+
+**Source type:** internal / generated  
+**Current source:** no external source
+
+#### Notes
+This endpoint does not fetch data.  
+It returns a hardcoded list of currently available endpoints.
+
+#### Related files
+
+- `backend/public/manifest.php`
+
+---
+
+### GET /us-config.php
+
+**Source type:** live API  
+**Current source:** U.S. Census Data API (daily PEP endpoint)
+
+#### Purpose
+Provides data for:
+
+- Total Population widget
+- Components of Change widget
+
+#### Current upstream source
+
+- Census endpoint:
+  - `https://api.census.gov/data/restricted/pep/daily`
+
+#### Current request fields
+
+The backend requests these fields from Census:
+
+- `MONTH`
+- `DATE_CODE`
+- `EDTMIDNIGHT`
+- `ESTMIDNIGHT`
+- `BIRTHCOMP`
+- `DEATHCOMP`
+- `TOTMIGCOMP`
+- `POPCOMP`
+
+#### What the backend does with it
+
+The backend transforms the raw Census response into a frontend-friendly payload:
+
+- midnight base population
+- net per-second growth
+- seconds per net gain
+- components of change
+  - birth interval
+  - death interval
+  - net migration interval
+
+#### Related files
+
+- `backend/public/us-config.php`
+- `backend/src/Services/UsConfigService.php`
+- `backend/src/Providers/CensusApi.php`
+- `backend/src/Http/HttpClient.php`
+- `backend/config/services.php`
+
+#### Notes
+
+- This endpoint is currently the primary live-data example in the project.
+- If live access fails in the future, this endpoint may later support a cache fallback.
+- The frontend should rely on the contract, not the source.
+
+---
+
+### GET /us-rankings.php
+
+**Source type:** static data  
+**Current source:** local JSON file
+
+#### Purpose
+Provides data for:
+
+- Most Populous widget
+
+#### Current local source
+
+- `backend/data/static/us-rankings.json`
+
+#### What the backend does with it
+
+The backend reads the local JSON file and returns:
+
+- `states`
+- `counties`
+- `cities`
+
+It also supports filtered responses using:
+
+- `?geo=state`
+- `?geo=county`
+- `?geo=city`
+
+#### Related files
+
+- `backend/public/us-rankings.php`
+- `backend/src/Services/UsRankingsService.php`
+- `backend/data/static/us-rankings.json`
+
+#### Notes
+
+- This is intentionally static for the first build.
+- Later, this can be replaced by:
+  - a live Census call
+  - a generated data pipeline
+  - a cached file
+- The frontend should not need to change if the response contract stays the same.
+
+---
+
+## Current Backend Data Flow Pattern
+
+The backend is designed so that source changes do **not** require frontend changes.
+
+### Pattern
+
+1. A request hits a public endpoint in `backend/public/`
+2. The endpoint calls a service in `backend/src/Services/`
+3. The service gets raw data from one of the following:
+   - live API
+   - static file
+   - cache
+4. The service transforms the raw data into a stable JSON response
+5. The endpoint returns the response
+
+### Example: `/us-config.php`
+
+1. `backend/public/us-config.php`
+2. `UsConfigService`
+3. `CensusApi`
+4. `HttpClient`
+5. Census API response
+6. transformed JSON returned to frontend
+
+### Example: `/us-rankings.php`
+
+1. `backend/public/us-rankings.php`
+2. `UsRankingsService`
+3. reads `backend/data/static/us-rankings.json`
+4. transformed JSON returned to frontend
+
+---
+
+## Current Static Files
+
+### `backend/data/static/us-rankings.json`
+
+**Purpose:** seed data for the Most Populous endpoint
+
+**Used by:**
+- `UsRankingsService`
+
+**Status:**
+- temporary starter source
+- safe to replace later
+
+---
+
+## Planned Cache Usage
+
+The `backend/data/cache/` directory is reserved for generated local data.
+
+Planned future uses:
+
+- saved upstream API responses
+- scheduled refresh snapshots
+- fallback data when live APIs are unavailable
+- normalized data generated by scripts
+
+### Example future pattern
+
+A service may later do this:
+
+1. check cache
+2. if cache is fresh, use it
+3. if cache is stale, call live API
+4. transform result
+5. save updated cache
+6. return stable response
+
+This allows:
+
+- faster responses
+- fewer external API calls
+- protection against temporary upstream outages
+
+---
+
+## Configuration Sources
+
+### `backend/config/app.php`
+
+Application-level settings such as:
+
+- service name
+- environment
+
+### `backend/config/services.php`
+
+External service settings such as:
+
+- Census base URL
+- Census API key (via environment variable)
+
+### Environment variables
+
+The following environment variables are currently expected:
+
+- `APP_ENV`
+- `CENSUS_API_KEY`
+
+These should not be hardcoded in public endpoint files.
+
+---
+
+## Design Rule
+
+The backend contract should remain stable even when the data source changes.
+
+That means:
+
+- a service may switch from static JSON to live API
+- a service may add caching
+- a service may later use a database
+
+But the response shape should remain the same unless a deliberate breaking change is made.
+
+This is the core design principle that allows the frontend to stay simple and stable.
+
+---
+
+## Planned Future Data Sources
+
+These are expected to be added later:
+
+### World Population Data
+Potential sources:
+- Census international APIs
+- static seed data
+- cached derived datasets
+
+Potential endpoints:
+- `GET /world-current.php`
+- `GET /world-rankings.php`
+
+### U.S. Regional Population Data
+Potential sources:
+- static config
+- generated datasets
+- Census-derived aggregates
+
+Potential endpoints:
+- `GET /us-regions.php`
+
+### U.S. Population Pyramid Data
+Potential sources:
+- static seed files
+- Census-derived age/sex datasets
+- cached transformed data
+
+Potential endpoints:
+- `GET /us-pyramid.php`
+
+---
+
+## Maintenance Notes
+
+When adding a new endpoint:
+
+1. Decide the source type:
+   - live
+   - static
+   - cache
+   - mixed
+2. Document the source here
+3. Document the response contract in `docs/api-contracts.md`
+4. Keep the transformation logic in `backend/src/Services/`
+5. Keep source-specific details out of the frontend
