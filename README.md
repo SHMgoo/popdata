@@ -1,106 +1,111 @@
 # popdata
 
-`popdata` is a backend data service (PHP) plus a frontend workspace (Vue clients + shared widgets) for population-based applications.
+`popdata` is a modular platform for building population-based applications.
 
-The goal is to centralize data gathering and transformation in one backend, and allow multiple frontend clients to consume the same standardized API responses.
+It consists of:
 
-## Project Structure
+- a **backend data service** (PHP)
+- a **shared widget library** (Vue)
+- multiple **frontend applications** built on top of those widgets
+
+The goal is to centralize data logic in one place and enable multiple applications to consume consistent, standardized APIs.
+
+---
+
+## 🧠 Architecture Overview
+
+PopData is designed as a **single platform (monorepo)** with three layers:
+
+1. **Data Service (Backend)**
+   - Handles all communication with external data sources (e.g., Census APIs)
+   - Normalizes and prepares data for consumption
+
+2. **Shared Widgets**
+   - Reusable UI components that consume PopData endpoints
+   - Designed to be portable across multiple applications
+
+3. **Applications (`frontend/apps`)**
+   - Independent apps built using shared widgets
+   - Example: Popclock
+
+---
+
+## 📁 Project Structure
 
 ```text
 popdata/
-├── backend/                 # PHP backend API (data service)
-│   ├── public/              # endpoints (thin controllers)
-│   ├── src/                 # services/providers/helpers
-│   ├── config/              # app + external service config
-│   └── data/                # static + cached data
-├── frontend/                # client apps + shared widgets (work in progress)
-├── docs/                    # documentation (contracts, sources, setup)
-├── Makefile
+├── backend/
+├── frontend/
+│   ├── apps/
+│   ├── widgets/
+│   ├── shared/
+│   └── clients/
+├── docs/
+├── scripts/
+├── distribution/        # ignored
+├── github-publish/      # ignored
 └── README.md
 ```
 
-## What Works Right Now
+---
 
-The backend currently has these working endpoints:
+## 🌿 Branch Strategy
 
-- `GET /health.php`  
-  Simple health check.
+- **development** → source of truth  
+- **publish** → deployment artifacts (generated, not edited)
 
-- `GET /manifest.php`  
-  Lists available endpoints.
+---
 
-- `GET /us-config.php`  
-  U.S. population clock config and components-of-change metrics.  
-  This currently pulls live data from the Census daily PEP API.
-
-- `GET /us-rankings.php`  
-  Most populous states, counties, and cities.  
-  This currently reads from `backend/data/static/us-rankings.json`.
-
-You can also filter rankings by group:
-
-- `GET /us-rankings.php?geo=state`
-- `GET /us-rankings.php?geo=county`
-- `GET /us-rankings.php?geo=city`
-
-## Backend Requirements
-
-- PHP 8+
-- A Census API key for `us-config.php`
-
-Helpful but optional:
-
-- `curl` for testing
-- `jq` for pretty-printing JSON in the terminal
-
-## Running the Backend
-
-From the project root, set your environment variables:
+## 🚀 Quick Start
 
 ```bash
 export APP_ENV=local
-export CENSUS_API_KEY='your_real_census_key_here'
-```
+export CENSUS_API_KEY='your_key_here'
 
-Then start the PHP development server:
-
-```bash
 php -S 127.0.0.1:8000 -t backend/public
 ```
 
-## Quick Test Commands
+---
+
+## 🔍 Example API Calls
 
 ```bash
 curl http://127.0.0.1:8000/health.php
-curl http://127.0.0.1:8000/manifest.php
-curl http://127.0.0.1:8000/us-config.php
-curl http://127.0.0.1:8000/us-rankings.php
-curl "http://127.0.0.1:8000/us-rankings.php?geo=state"
+curl http://127.0.0.1:8000/us-population-summary.php
+curl http://127.0.0.1:8000/us-populous.php
 ```
 
-## Documentation
+---
 
-See the `docs/` folder for more detail:
+## 🧩 Backend Design
 
-- `docs/setup.md` — how to run the backend
-- `docs/api-contracts.md` — response shapes for each endpoint
-- `docs/data-sources.md` — where each endpoint gets its data
+- public/ → endpoints  
+- src/Services → business logic  
+- src/Providers → external APIs  
+- data/static → seed data  
+- data/cache → runtime cache  
 
-## Design Notes
+---
 
-The backend follows this pattern:
+## 🎯 Vision
 
-- `backend/public/*.php` are thin endpoint files
-- `backend/src/Services/*` builds final JSON payloads
-- `backend/src/Providers/*` talks to external APIs (like Census)
-- `backend/src/Http/*` handles outbound requests and JSON responses
-- `backend/data/static` holds hardcoded or seed data
-- `backend/data/cache` is reserved for generated cached payloads
+PopData is not a single app — it is a **platform**.
 
-This keeps the frontend stable even if backend data sources change later.
+> Build once. Reuse everywhere.
 
-## Next Planned Work
+---
 
-- Add more endpoints (for example: `us-regions`, `world-current`, `world-rankings`)
-- Begin wiring `frontend/clients/popclock` to the new backend endpoints
-- Move widget UI into `frontend/widgets`
+## 🔮 Future Direction
+
+- Containerization (Podman / AWS)
+- CI/CD pipeline
+- Expand widget library
+- Multiple production apps
+
+---
+
+## ⚠️ Notes
+
+- Do not edit `publish` branch manually  
+- Generated folders are ignored  
+- All development happens on `development`  
