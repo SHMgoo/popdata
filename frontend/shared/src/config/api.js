@@ -12,6 +12,8 @@ export const API_ENDPOINTS = {
   worldRankings: '/world-rankings.php',
   usPopulous: '/us-populous.php',
   usDensity: '/us-density.php',
+  usRegions: '/us-regions.php',
+  usAgeSex: '/us-age-sex.php',
 }
 
 export function apiUrl(endpoint) {

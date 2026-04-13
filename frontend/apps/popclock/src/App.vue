@@ -69,7 +69,7 @@
       </div>
     </section>
 
-     <section class="popclock-band">
+    <section class="popclock-band">
       <div class="popclock-shell">
         <div class="band-heading">
           <h2 class="band-heading__title">Population distribution</h2>
@@ -80,11 +80,46 @@
 
         <div class="widget-grid widget-grid--two-up">
           <div class="panel-card">
-           <UsMostPopulousConnected size="sm" :auto-rotate="true" :rotate-seconds="3" />
+            <UsMostPopulousConnected size="sm" :auto-rotate="true" :rotate-seconds="3" />
           </div>
 
           <div class="panel-card">
             <UsHighestDensityConnected size="sm" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popclock-band">
+      <div class="popclock-shell">
+        <div class="content-grid content-grid--wide-left">
+          <div class="band-heading">
+            <h2 class="band-heading__title">Population growth by region</h2>
+            <p class="band-heading__text">
+              Compare how the Northeast, Midwest, South, and West have changed over time.
+            </p>
+          </div>
+
+          <div class="panel-card panel-card--region-growth">
+            <UsRegionGrowthConnected />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popclock-band">
+      <div class="popclock-shell">
+        <div class="content-grid content-grid--wide-left">
+          <div class="band-heading">
+            <h2 class="band-heading__title">Population by age and sex</h2>
+            <p class="band-heading__text">
+              Explore how the U.S. population is distributed by age for males and females,
+              and compare how the shape changes over time.
+            </p>
+          </div>
+
+          <div class="panel-card panel-card--region-growth">
+            <UsAgeSexConnected />
           </div>
         </div>
       </div>
@@ -107,6 +142,23 @@
         </div>
       </div>
     </section>
+    <section class="popclock-band popclock-band--muted">
+      <div class="popclock-shell">
+        <div class="content-grid content-grid--wide-left">
+          <div class="band-heading">
+            <h2 class="band-heading__title">Global context</h2>
+            <p class="band-heading__text">
+              Compare the world’s most populous countries and place the U.S.
+              population in a broader international view.
+            </p>
+          </div>
+
+          <div class="panel-card">
+            <WorldMapConnected />
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -118,6 +170,9 @@ import MostPopulousCountries from '@widgets/components/MostPopulousCountries.vue
 import UsPopulationOnDate from '@widgets/components/UsPopulationOnDate.vue'
 import UsMostPopulousConnected from '@widgets/components/UsMostPopulousConnected.vue'
 import UsHighestDensityConnected from '@widgets/components/UsHighestDensityConnected.vue'
+import UsRegionGrowthConnected from '@widgets/components/UsRegionGrowthConnected.vue'
+import UsAgeSexConnected from '@widgets/components/UsAgeSexConnected.vue'
+import WorldMapConnected from '@widgets/components/WorldMapConnected.vue'
 </script>
 
 <style scoped>
@@ -259,6 +314,11 @@ import UsHighestDensityConnected from '@widgets/components/UsHighestDensityConne
   background: rgba(255, 255, 255, 0.96);
 }
 
+.panel-card--region-growth {
+  max-width: 33rem;
+  margin: 0 auto;
+}
+
 .widget-grid {
   display: grid;
   gap: 1.25rem;
@@ -273,10 +333,7 @@ import UsHighestDensityConnected from '@widgets/components/UsHighestDensityConne
   .widget-grid--two-up {
     grid-template-columns: 1fr;
   }
-}
 
-
-@media (max-width: 960px) {
   .hero__grid,
   .content-grid,
   .content-grid--wide-left {
